@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(0, 0, 0, 0.700);
+}
+
+.calculadora-container-pai{
+    background-color: rgb(0, 0, 0);
+    width: 39vw;
+    border: 5px solid black;
+    margin: auto;
+}
+.calculadora-container-visor{
+    background-color: rgb(224, 26, 26);
+    width: 36vw;
+    margin: 2px;
+    border: px solid white;
+    text-align: right;
+    padding:8px;
+    font-size: 20px;
+}
+.container-logico{
+    display: flex;
+    
+}
+.calculadora-container-numeros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.calculadora-container-operadores{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.operador{
+    font-size: 280%;
+    width: 9.2vw;
+    margin: 2px;
+}
+.numeros{
+    font-size: 320%;
+    width: 9.2vw;
+    margin: 2px;
+}
