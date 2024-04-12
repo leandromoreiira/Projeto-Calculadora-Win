@@ -9,29 +9,32 @@ function escolhenumero(numero){
     }else{
         numero2 = numero2 *10 + numero;
         document.getElementById('number2').innerHTML = numero2;
+       
     }
+    
 }
-
-
 
 function operacao(op){
     operador = op;
+    document.getElementById('operadorlogico').innerHTML = op;
+
 }
+
 
 
 function calcularesultado(){
     let resultado = 0;
     switch(operador){
-        case 'soma':
+        case '+':
             resultado = soma(numero1,numero2);
         break
-        case 'subt':
+        case '-':
             resultado = subt(numero1,numero2);
         break
-        case 'mult':
+        case '*':
             resultado = mult(numero1,numero2);
         break
-        case 'divi':
+        case '/':
             resultado = divi(numero1,numero2);
         break
             

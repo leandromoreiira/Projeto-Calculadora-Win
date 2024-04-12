@@ -11,30 +11,31 @@
 <body>
     <div class="calculadora-container-pai">
         <div class="calculadora-container-visor">
-            <div id="number1">0</div>
-            <div id="number2">0</div>
-            <div id="resultado">Resultado</div>
+            <div id="number1" class="numeros-do-visor">0</div>
+            <div id="number2" class="numeros-do-visor">0</div>
+            <div id="operadorlogico">?</div>
+            <div id="resultado" class="numeros-do-visor">Resultado</div>
         </div>
         <div class="container-logico">
             <div class="calculadora-container-numeros">
-                <button class="numeros" onclick="escolhenumero(9)">9</button>
-                <button class="numeros" onclick="escolhenumero(8)">8</button>
                 <button class="numeros" onclick="escolhenumero(7)">7</button>
-                <button class="numeros" onclick="escolhenumero(6)">6</button>
-                <button class="numeros" onclick="escolhenumero(5)">5</button>
+                <button class="numeros" onclick="escolhenumero(8)">8</button>
+                <button class="numeros" onclick="escolhenumero(9)">9</button>
                 <button class="numeros" onclick="escolhenumero(4)">4</button>
-                <button class="numeros" onclick="escolhenumero(3)">3</button>
-                <button class="numeros" onclick="escolhenumero(2)">2</button>
+                <button class="numeros" onclick="escolhenumero(5)">5</button>
+                <button class="numeros" onclick="escolhenumero(6)">6</button>
                 <button class="numeros" onclick="escolhenumero(1)">1</button>
+                <button class="numeros" onclick="escolhenumero(2)">2</button>
+                <button class="numeros" onclick="escolhenumero(3)">3</button>
                 <button class="numeros" onclick="escolhenumero(0)">0</button>
                 <button class="numeros" onclick="limpacampo()">C</button>
                 <button class="operador" id="igua" onclick="calcularesultado()">=</button>
             </div>
             <div class="calculadora-container-operadores">
-                <button class="operador" id="soma" onclick="operacao('soma')">+</button>
-                <button class="operador" id="subt" onclick="operacao('subt')">-</button>
-                <button class="operador" id="divi" onclick="operacao('divi')">/</button>
-                <button class="operador" id="mult" onclick="operacao('mult')">*</button>
+                <button class="operador" id="soma" onclick="operacao('+')">+</button>
+                <button class="operador" id="subt" onclick="operacao('-')">-</button>
+                <button class="operador" id="divi" onclick="operacao('/')">/</button>
+                <button class="operador" id="mult" onclick="operacao('*')">*</button>
 
             </div>
         </div>
